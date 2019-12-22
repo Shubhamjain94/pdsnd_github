@@ -8,15 +8,15 @@ CITY_DATA = {'chicago': 'chicago.csv',
              'new york city': 'new_york_city.csv',
              'washington': 'washington.csv'}
 
-months = ('january', 'february', 'march', 'april', 'may', 'june')
+months =   ('january', 'february', 'march', 'april', 'may', 'june')
 
 weekdays = ('sunday', 'monday', 'tuesday', 'wednesday', 'thursday', 'friday',
             'saturday')
 
 
 def choice(prompt, choices=('y', 'n')):
-    """Return a valid input from the user given an array of possible answers.
-    """
+    	"""Return a valid input from the user given an array of possible answers.
+    	"""
 
     while True:
         choice = input(prompt).lower().strip()
@@ -40,13 +40,13 @@ def choice(prompt, choices=('y', 'n')):
 
 
 def get_filters():
-    """Ask user to specify city(ies) and filters, month(s) and weekday(s).
+    	"""Ask user to specify city(ies) and filters, month(s) and weekday(s).
 
-    Returns:
-        (str) city - name of the city(ies) to analyze
-        (str) month - name of the month(s) to filter
-        (str) day - name of the day(s) of week to filter
-    """
+    	Returns:
+        	(str) city - name of the city(ies) to analyze
+        	(str) month - name of the month(s) to filter
+        	(str) day - name of the day(s) of week to filter
+    	"""
 
     print("\n\nLet's explore some US bikeshare data!\n")
 
@@ -91,6 +91,7 @@ def load_data(city, month, day):
 
     print("\nThe program is loading the data for the filters of your choice.")
     start_time = time.time()
+
 
     # filter the data according to the selected city filters
     if isinstance(city, list):
